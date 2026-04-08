@@ -24,6 +24,7 @@ function App() {
   }
 
   const playGame = (playerChoice) => {
+    // eslint-disable-next-line react-hooks/purity
     const computerChoice = choices[Math.floor(Math.random() * 3)];
     const winner = determineWinner(playerChoice, computerChoice);
     
